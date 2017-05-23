@@ -1,0 +1,540 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+a{
+    text-decoration: none;
+}
+img{
+    border:0;
+}
+ul{
+    list-style: none;
+}
+.right{
+    color:green;
+}
+.error{
+    color:red;
+}
+.key,.keys{
+    color:red;
+}
+/************************header开始＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+#header{
+    width:100%;
+    height:50px;
+    background:#ffff00;
+    position:relative;
+}
+#header .userName,#header .login{
+    position: absolute;
+    height:100%;
+    width:200px;
+    text-align: center;
+    line-height:50px;
+    color:red;
+    float:left;
+    left: 30px;
+    cursor: pointer;
+}
+#header .login{
+    display:none;
+    z-index:1;
+}
+
+#header .right{
+
+    float:right;
+    height:100%;
+    width:200px;
+    text-align: center;
+    line-height:50px;
+    color:red;
+    margin-right: 30px;
+}
+#header .right span {
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+/************************header结束＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+/************************mask开始＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+#mask{
+    z-index:9999;
+    position:fixed;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    background:#f9f9f9;
+    display:none;
+}
+#mask .window{
+    width:700px;
+    height:500px;
+    position:absolute;
+    left:50%;
+    margin-left:-350px;
+    top:50%;
+    margin-top:-250px;
+
+}
+#mask .window input{
+    width:300px;
+    height:30px;
+    margin-bottom: 50px;
+}
+#mask .window #sub{
+    width:60px;
+    height:30px;
+    margin-left:200px;
+}
+/************************mask结束＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊＊*/
+/************menu开始***************/
+#menu{
+    width:100%;
+    height:112px;
+    background:pink;
+
+}
+#menu .img1{
+    float:left;
+}
+#menu .our{
+    float:right;
+    margin-top:40px;
+    height:30px;
+    line-height:30px;
+    margin-right:100px;
+
+}
+#menu .our .severs{
+    cursor: pointer;
+    float:left;
+    width:150px;
+    text-align:center;
+    margin-right:10px;
+    color:#ffff00;
+    font-size: 20px;
+}
+#menu .our .select{
+    background:red;
+}
+#menu .our .severs a{
+    float:left;
+    width:100%;
+    height:100%;
+}
+/******menu结束***************/
+/************banner开始***************/
+
+#banner .banner-content{
+    height:500px;
+    position:relative;
+    overflow: hidden;
+}
+#banner .banner-content img{
+    float:left;
+    height:100%;
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+
+#banner .banner-content div{
+    height:50px;
+    width:50px;
+    position:absolute;
+    top:200px;
+
+    z-index:2;
+}
+#banner .banner-content .left{
+    left:0;
+}
+#banner .banner-content .right{
+    right:0;
+}
+
+#banner .banner-content .left-span{
+    left:0;
+    top:25px;
+    float:left;
+    width:50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    height:50px;
+    background:yellow;
+    position:absolute;
+    opacity:0;
+    filter:alpha(opacity=0);
+    line-height: 50px;
+    font-size: 28px;
+    text-align: center;
+}
+#banner .banner-content .right-span{
+    right:0;
+    top:25px;
+    float:left;
+    width:50px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    height:50px;
+    background:yellow;
+    position:absolute;
+    opacity:0;
+    filter:alpha(opacity=0);
+    line-height: 50px;
+    font-size: 28px;
+    text-align: center;
+}
+#banner .banner-content p{
+    position:absolute;
+    height:50px;
+    line-height: 50px;
+    display: none;
+}
+#banner .banner-content .left-content{
+    right:-150px;
+    top:25px;
+}
+#banner .banner-content .right-content{
+    left:-150px;
+    top:25px;
+}
+#banner {
+    position:relative;
+}
+#banner .bottom-top{
+    width: 434px;
+    height:50px;
+    position:absolute;
+    left:50%;
+    margin-left: -217px;
+    top:-40px;
+    text-align: center;
+    line-height: 50px;
+    background:rgba(200,200,200,0.3);
+    font-size: 28px;
+    display:none;
+
+}
+#banner .bottom-center{
+    position:absolute;
+    width:500px;
+    height:30px;
+    left:50%;
+    margin-left: -220px;
+    top:-40px;
+    display: none;
+}
+#banner .bottom{
+    display:none;
+    position:absolute;
+    width:400px;
+    height:30px;
+    left:50%;
+    margin-left: -200px;
+    top:-40px;
+}
+#banner .bottom span{
+    float:left;
+    width:200px;
+    height:30px;
+    line-height:30px;
+    text-align: center;
+}
+#banner .bottom .bottom-left{
+    background:yellow;
+}
+#banner .bottom .bottom-right{
+    background:pink;
+}
+/************banner结束***************/
+/************news开始***************/
+#news{
+    width:100%;
+    height:600px;
+    background:yellow;
+}
+#news div.top{
+    float:left;
+    width:100%;
+    height:226px;
+
+}
+#news .top h3{
+    width:300px;
+    font-size: 20px;
+    margin: 100px auto 0;
+    text-align: center;
+
+
+}
+#news .top p{
+
+    width:300px;
+    margin: 10px auto;
+}
+#news .bottom{
+    width:1240px;
+    position:absolute;
+    left:50%;
+    margin-left:-620px;
+    margin-top: 226px;
+    height:374px;
+
+}
+#news .bottom li{
+    width:278px;
+    height:270px;
+    margin-right: 10px;
+
+    float:left;
+}
+#news .bottom .bottom1{
+    background:url(../../img/index_img/pet_icon_01.png) no-repeat center 0;
+}
+#news .bottom .bottom2{
+    background:url(../../img/index_img/pet_icon_02.png) no-repeat center 0;
+}
+#news .bottom .bottom3{
+    background:url(../../img/index_img/pet_icon_03.png) no-repeat center 0;
+}
+#news .bottom .bottom4{
+    background:url(../../img/index_img/pet_icon_04.png) no-repeat center 0;
+}
+#news .bottom li h3{
+    text-align: center;
+    margin-top:130px;
+}
+#news .bottom li p{
+    text-align: center;
+    margin-top:10px;
+}
+#news .bottom li a{
+    display: block;
+
+    width:70px;
+    margin:10px auto;
+}
+/************news结束***************/
+/************show开始***************/
+#show div.top{
+    float:left;
+    width:100%;
+    height:226px;
+
+}
+#show .top h3{
+    width:300px;
+    font-size: 20px;
+    margin: 100px auto 0;
+    text-align: center;
+
+
+}
+#show .top p{
+
+    width:300px;
+    margin: 10px auto;
+}
+#show .bottom{
+    width:1170px;
+    position:absolute;
+    left:50%;
+    margin-left:-585px;
+    margin-top: 226px;
+    height:330px;
+
+
+}
+#show .bottom div{
+    float:left;
+    width:585px;
+    height:165px;
+
+    opacity:0;
+    filter:Alpha(opacity=0);
+}
+#show .bottom img{
+    float:left;
+    height:160px;
+    width:160px;
+}
+#show .bottom ul{
+    margin-top: 30px;
+}
+#show .bottom ul p{
+    margin-top: 15px;
+}
+#show .bottom ul a{
+    display:block ;
+    width:50px;
+    margin: 10px 0 0 160px;
+}
+#show{
+    height:580px;
+
+}
+/************show结束***************/
+/************ourVets开始***************/
+#ourVets{
+    height:750px;
+    background:#3b3d42;
+    position:relative;
+}
+#ourVets div.top{
+    float:left;
+    width:100%;
+    height:226px;
+
+
+
+}
+#ourVets .top h3{
+    width:300px;
+    font-size: 20px;
+    margin: 100px auto 0;
+    text-align: center;
+
+
+}
+#ourVets .top p{
+
+    width:300px;
+    margin: 10px auto;
+
+}
+#ourVets .content{
+
+    width:1134px;
+    height:450px;
+    position:absolute;
+    left:50%;
+    margin-left: -570px;
+    top:226px;
+
+}
+#ourVets .content1{
+    height:450px;
+    position:relative;
+}
+#ourVets .content ul{
+    position:absolute;
+    left:0;
+}
+#ourVets .content ul li {
+    float:left;
+    width:264px;
+    height:450px;
+    margin-right: 26px;
+}
+#ourVets .content ul .img{
+
+    width:100%;
+    height:264px;
+    /*border:1px solid transparent;*/
+    border-radius: 132px;
+    overflow: hidden;
+}
+#ourVets .content  img{
+    float:left;
+    height:264px;
+    margin-top: 0;
+}
+#ourVets .content  .title{
+    margin-top:20px;
+
+
+}
+#ourVets .content  span{
+    font-size: 14px;
+    color:#fff;
+
+
+}
+#ourVets .content .special{
+    font-size:16px;
+    color:#ccc;
+    float:left;
+    width:110px;
+    border-right:2px solid yellow;
+    margin-right: 3px;
+}
+#ourVets .content a{
+    float: left;
+    width:100%;
+    text-align: center;
+    color: yellow;
+    margin-top: 10px;
+}
+
+#ourVets .content .left{
+    float:left;
+    width:30px;
+    height:30px;
+    background: yellow;
+    color:#ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    left:-30px;
+    top:50%;
+    margin-top: -15px;
+    border-radius: 30px;
+    z-index:1;
+}
+#ourVets .content .right{
+    float:left;
+    width:30px;
+    height:30px;
+    background: yellow;
+    color:#ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    position: absolute;
+    right:-30px;
+    top:50%;
+    margin-top: -15px;
+    border-radius: 30px;
+    z-index:1;
+}
+#ourVets .content1{
+    overflow: hidden;
+}
+
+
+
+/************ourVets结束***************/
+#mes{
+    position:fixed;
+    left:50%;
+    top:50%;
+    width:300px;
+    height:300px;
+    margin-left:-150px;
+    margin-top:-150px;
+    background:grey;
+    color:red;
+    display: none;
+}
+#mes span{
+    position:absolute;
+    right:0;
+    top:0;
+    height:50px;
+    display: block;
+ }
+
